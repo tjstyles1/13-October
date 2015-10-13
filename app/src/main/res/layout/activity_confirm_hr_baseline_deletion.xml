@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rittie.andy.testing.ConfirmHRBaselineDeletion"
+    android:id="@+id/ConfirmHRBaselineDeletionScreen">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Warning Message"
+        android:id="@+id/lblConfirmHRBaselineDelete"
+        android:layout_below="@+id/tool_bar"
+        android:layout_marginTop="43dp"
+        android:layout_alignLeft="@+id/btnHRBaselineDeleteYes"
+        android:layout_alignStart="@+id/btnHRBaselineDeleteYes"
+        android:layout_alignRight="@+id/btnHRBaselineDeleteNo"
+        android:layout_alignEnd="@+id/btnHRBaselineDeleteNo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:id="@+id/btnHRBaselineDeleteNo"
+        android:layout_marginRight="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_alignTop="@+id/btnHRBaselineDeleteYes"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:id="@+id/btnHRBaselineDeleteYes"
+        android:layout_marginBottom="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp" />
+
+</RelativeLayout>

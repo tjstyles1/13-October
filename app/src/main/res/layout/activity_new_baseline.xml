@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rittie.andy.testing.NewBaseline"
+    android:id="@+id/NewBaselineScreen">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblNewBaselineName"
+        android:layout_marginTop="121dp"
+        android:hint="Name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/tool_bar"
+        android:text="New Baseline Name"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:id="@+id/btnOk"
+        android:onClick="login"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNewBaseline"
+        android:layout_above="@+id/btnOk"
+        android:layout_alignRight="@+id/lblNewBaselineName"
+        android:layout_alignEnd="@+id/lblNewBaselineName"
+        android:layout_alignLeft="@+id/lblNewBaselineName"
+        android:layout_alignStart="@+id/lblNewBaselineName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Error Message"
+        android:id="@+id/lblBaselineAlreadyExisits"
+        android:layout_below="@+id/btnOk"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff0000" />
+
+</RelativeLayout>
